@@ -6,7 +6,7 @@
             "value": "digihubtestcosmosdb"
         },
         "location":{
-            "value": "Central India"
+            "value": "centralindia"
         },
         "automaticFailover":{
             "value": false

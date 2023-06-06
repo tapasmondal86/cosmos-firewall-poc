@@ -7,7 +7,7 @@
             "type": "String"
         },
         "location":{
-            "defaultValue": "Central India",
+            "defaultValue": "centralindia",
             "type": "String"
         },
         "automaticFailover":{

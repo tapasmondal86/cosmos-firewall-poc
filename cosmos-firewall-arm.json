@@ -20,7 +20,7 @@
     "resources": [
         {
         "type": "Microsoft.DocumentDB/databaseAccounts",
-        "name": "[variables('accountName')]",
+        "name": "[parameters('accountName')]",
         "apiVersion": "2020-04-01",
         "location": "[parameters('location')]",
         "kind": "GlobalDocumentDB",

@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "accountName": {
-            "value": null
+            "value": "digihubtestcosmosdb"
         },
         "location":{
-            "value": null
+            "value": "Central India"
         },
         "automaticFailover":{
-            "value": null
+            "value": false
         }
     }
 }

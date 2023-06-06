@@ -79,7 +79,11 @@
             "locations": "[parameters('location')]",
             "databaseAccountOfferType": "Standard",
             "publicNetworkAccess": "Enabled",
-            "consistencyPolicy": "[variables('consistencyPolicy')[parameters('defaultConsistencyLevel')]]",
+            "consistencyPolicy": {
+                "defaultConsistencyLevel": "Session",
+                "maxIntervalInSeconds": 5,
+                "maxStalenessPrefix": 100
+            },
             "enableAutomaticFailover": "[parameters('automaticFailover')]",
             "ipRules": [
             {

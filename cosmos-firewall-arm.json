@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "accountName": {
+            "defaultValue": "digihubtestcosmosdb",
+            "type": "String"
+        },
+        "location":{
+            "defaultValue": "Central India",
+            "type": "String"
+        },
+        "automaticFailover":{
+            "defaultValue": false,
+            "type": "bool"
+        }
+
+    },
+    "variables": {},
+    "resources": [
+        {
+        "type": "Microsoft.DocumentDB/databaseAccounts",
+        "name": "[variables('accountName')]",
+        "apiVersion": "2020-04-01",
+        "location": "[parameters('location')]",
+        "kind": "GlobalDocumentDB",
+        "properties": {
+            "locations": "[parameters('locations')]",
+            "databaseAccountOfferType": "Standard",
+            "publicNetworkAccess": "Enabled",
+            "enableAutomaticFailover": "[parameters('automaticFailover')]",
+            "ipRules": [
+            {
+                "ipAddressOrRange": "157.40.145.195"
+            },
+            {
+                "ipAddressOrRange": "10.10.86.193"
+            }
+            ]
+        }
+        }
+    ]
+}

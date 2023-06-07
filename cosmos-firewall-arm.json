@@ -46,7 +46,7 @@
               "description": "The default consistency level of the Cosmos DB account."
             }
           },
-          "ipRelus":{
+          "ipRules":{
             "type":"array",
             "defaultValue": []
           }
@@ -80,7 +80,6 @@
         "location": "[parameters('location')]",
         "kind": "GlobalDocumentDB",
         "properties": {
-            "locations" :"[parameters('location')]",
             "locations": [
                 {
                     "locationName": "Central India",

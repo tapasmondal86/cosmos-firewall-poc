@@ -95,9 +95,6 @@
             "ipRules": [
             {
                 "ipAddressOrRange": "157.40.145.195"
-            },
-            {
-                "ipAddressOrRange": "10.10.86.193"
             }
             ]
         }

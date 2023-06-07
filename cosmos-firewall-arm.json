@@ -96,7 +96,7 @@
                 "maxStalenessPrefix": 100
             },
             "enableAutomaticFailover": "[parameters('automaticFailover')]",
-            "ipRules": "[parameters('ipRules)]"
+            "ipRules": "[parameters('ipRules')]"
         }
         }
     ]

@@ -4,11 +4,11 @@
     "parameters": {
         "accountName": {
             "defaultValue": "digihubtestcosmosdb",
-            "type": "String"
+            "type": "string"
         },
         "location":{
             "defaultValue": "centralindia",
-            "type": "String"
+            "type": "string"
         },
         "automaticFailover":{
             "defaultValue": false,

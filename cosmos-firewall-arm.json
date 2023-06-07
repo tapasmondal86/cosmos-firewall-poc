@@ -76,6 +76,7 @@
         "location": "[parameters('location')]",
         "kind": "GlobalDocumentDB",
         "properties": {
+            "locations" :"[parameters('location')]",
             "locations": [
                 {
                     "locationName": "Central India",
@@ -92,17 +93,7 @@
                 "maxStalenessPrefix": 100
             },
             "enableAutomaticFailover": "[parameters('automaticFailover')]",
-            "ipRules": [
-            {
-                "ipAddressOrRange": "157.40.145.195"
-            },
-            {
-                "ipAddressOrRange": "45.64.227.171"
-            },
-            {
-                "ipAddressOrRange": "223.186.125.184"
-            }
-            ]
+            "ipRules": "[parameters('ipRules)]"
         }
         }
     ]

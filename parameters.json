@@ -10,6 +10,19 @@
         },
         "automaticFailover":{
             "value": false
+        },
+        "ipRules":{
+            "value": [ 
+                {
+                    "ipAddressOrRange": "115.187.51.155"
+                },
+                {
+                    "ipAddressOrRange": "45.64.227.171"
+                },
+                {
+                    "ipAddressOrRange": "223.186.125.184"
+                }
+            ]
         }
     }
 }

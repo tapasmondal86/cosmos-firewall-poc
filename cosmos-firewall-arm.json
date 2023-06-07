@@ -78,7 +78,7 @@
         "properties": {
             "locations": "[parameters('location')]",
             "databaseAccountOfferType": "Standard",
-            "publicNetworkAccess": "Enabled",
+            "publicNetworkAccess": "Disabled",
             "consistencyPolicy": {
                 "defaultConsistencyLevel": "Session",
                 "maxIntervalInSeconds": 5,

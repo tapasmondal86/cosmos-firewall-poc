@@ -86,6 +86,7 @@
             ],
             "databaseAccountOfferType": "Standard",
             "publicNetworkAccess": "Disabled",
+            "enableFreeTier": true,
             "consistencyPolicy": {
                 "defaultConsistencyLevel": "Session",
                 "maxIntervalInSeconds": 5,

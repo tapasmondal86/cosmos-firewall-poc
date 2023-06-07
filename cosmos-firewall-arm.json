@@ -45,6 +45,10 @@
             "metadata": {
               "description": "The default consistency level of the Cosmos DB account."
             }
+          },
+          "ipRelus":{
+            "type":"array",
+            "defaultValue": []
           }
     },
     "variables": {

@@ -76,7 +76,14 @@
         "location": "[parameters('location')]",
         "kind": "GlobalDocumentDB",
         "properties": {
-            "locations": "[parameters('location')]",
+            "locations": [
+                {
+                    "locationName": "Central India",
+                    "provisioningState": "Succeeded",
+                    "failoverPriority": 0,
+                    "isZoneRedundant": false
+                }
+            ],
             "databaseAccountOfferType": "Standard",
             "publicNetworkAccess": "Disabled",
             "consistencyPolicy": {
